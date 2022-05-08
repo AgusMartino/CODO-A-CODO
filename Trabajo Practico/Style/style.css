@@ -1,0 +1,33 @@
+.img{
+    text-align: center;
+    width: 150px;
+}
+
+.img:hover{
+    transform: scale(2.0);
+    opacity: 1;
+    filter: blur(0px);
+}
+
+.p{
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.a{
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+nav{
+    background-color: black;
+}
+
+body{
+    background-color: black;
+}
+
+
+

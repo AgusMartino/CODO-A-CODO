@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="Style/style.css">
+    <link rel="stylesheet" href="Style/flexbox.css">
+    <script src="https://kit.fontawesome.com/66875b084e.js" crossorigin="anonymous"></script>
+</head>
+<div class="row">
+    <body>
+        <nav id="nav" name="nav">
+            <div class="flex-container2">
+                <div><a class="a" href="index.html"> Inicio</a></div>
+                <div><a class="a" href="index.html"> Productos</a></div>
+                <div><a class="a" href="index.html"> ¿Quienes somos?</a></div>
+                <div><a class="a" href="Contacto.html" target="_blanck"> Contactanos</a></div>
+                <div><a class="a" href="formulario_registro.html" target="_blanck"> Registrate</a></div>
+            </div>
+        </nav>
+        <div class="flex-container">
+            <div class="div">
+                <h2>Registro de Cliente</h2>
+            </div>
+            <div>
+                <form action="" name="formRegistro" id="formRegistro">
+                    <div class="div">
+                        <label for="name">
+                            <span>Nombre:</span>
+                            <input type="text" name="name" id="name">
+                        </label>
+                    </div>
+                    <div id="errorName"></div>
+                    <div class="div">
+                        <label for="lastname">
+                        <span>Apellido:</span>
+                        <input type="text" name="lastname" id="lastname">
+                        </label>
+                    </div>
+                    <div id="errorLastName"></div>
+                    <div class="div">
+                        <label for="email">
+                            <span>Email:</span>
+                            <input type="email" name="email" id="email">
+                        </label>
+                    </div>
+                    <div id="errorEmail"></div>
+                    <div class="div">
+                        <label for="telefono">
+                            <span>Telefono:</span>
+                            <input type="number" name="codigo_pais" id="codigo_pais" min="0" max="999" maxlength="3">
+                            <input type="number" name="codigo_area" id="codigo_area" min="0" max="9999" maxlength="4">
+                            <input type="number" name="numero" id="numero" min="0" max="99999999" maxlength="8">
+                        </label>
+                    </div>
+                    <div id="errorTelefono"></div>
+                    <div class="div">
+                        <label for="dni">
+                            <span>DNI:</span>
+                            <input type="number" name="dni" id="dni" min="10000000" max="99999999">
+                        </label>
+                    </div>
+                    <div id="errorDNI"></div>
+                    <div class="div">
+                        <label for="password">
+                            <span>Contraseña:</span>
+                            <input type="password" name="password" id="password">
+                        </label>
+                    </div>
+                    <div id="errorContraseña"></div>
+                    <div class="div">
+                        <label for="repeat_password">
+                            <span>Repetir Contraseña:</span>
+                            <input type="password" name="repeat_password" id="repeat_password">
+                        </label>
+                    </div>
+                    <div id="errorValidadorContraseña"></div>
+                    <div class="div"> 
+                        <label for="terms">
+                            <input type="checkbox" name="terms" id="terms">
+                            <span>Aceptar Terminos y condiciones</span>
+                        </label>
+                    </div>
+                    <div id="errorTerms"></div>
+                    <div class="div">
+                        <input type="submit" id="submit" value="Registrarse">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <footer id="footer" name="footer">
+            <div class="flex-container1">
+                <div style="flex-grow: 1;flex-shrink: 20%;margin-top: 1%;">
+                    <img src="img/Logo.jpg" alt="Logo" width="100px">
+                </div>
+                <div style="flex-grow: 1;flex-shrink: 20%;margin-top: 1%;">
+                    <a class="a" href="https://www.google.com.ar/maps/place/F%C3%A1brica+de+Pastas+Vicente/@-34.5060815,-58.5706678,20.75z/data=!4m5!3m4!1s0x95bcbbcc099f7687:0xb6488b7b6b7ef1a4!8m2!3d-34.5059695!4d-58.5706281">
+                        <i class="fa-solid fa-route fa-2x"></i>
+                        <span>Bernardo de Irigoyen 397, Boulogne</a>
+                    </a>
+                </div>
+                <div style="flex-grow: 1;flex-shrink: 20%;margin-top: 1%;">
+                    <a class="a">
+                        <i class="fa-solid fa-mobile-retro fa-2x"></i>
+                        <span>11-4737-7592</span>
+                    </a>
+                </div>
+                <div style="flex-grow: 1;flex-shrink: 20%;margin-top: 1%;">
+                    <a class="a" href="">
+                        <i class="fa-brands fa-instagram-square fa-2x"></i>
+                        <span>Fábrica de Pastas Vicente</span>
+                    </a>
+                </div>
+                <div style="flex-grow: 1;flex-shrink: 20%;margin-top: 1%;">
+                    <a class="a" href="https://www.facebook.com/VicentePastasFrescas/">
+                        <i class="fa-brands fa-facebook fa-2x"></i>
+                        <span>Fábrica de Pastas Vicente</span>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</div>
+<script src = 'Funciones/FormRegistro.js'></script>
+</html>
